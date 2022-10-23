@@ -6,7 +6,7 @@
 그 이후의 다시 JSON으로 직렬화할때 문제가 생긴다.
 
 dto를 사용하면 @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss") 등 어노테이션으로 String으로 변환해 해결 가능하지만
-mybatis 같은 sqlmapper를 사용시 dto를 사용하지 않고 map으로 받아 온다면 포맷팅을 할 때 반복문을 돌려서 모든 조건을 검사하여 날짜타입의 컬럼을 찾아 위와 같이 조건을 줘서 해야 될 것이다.
+mybatis 같은 sqlmapper를 사용시 dto를 사용하지 않고 map으로 받아 온다면 포맷팅을 할 때 까다로워집니다.
 
 위와 같은 것들을 Custom Serializer를 구현하면 해결 할 수 있다.
 
